@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 corsOptions = {
   credentials: true,
-  origin: ["http://localhost:3000", "https://mini-project-pi-neon.vercel.app"],
+  origin: ["http://localhost:3000", "https://mini-project-abc12.vercel.app"],
   optionStatus: 200,
 };
 
