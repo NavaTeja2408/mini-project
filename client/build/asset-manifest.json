@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7ce630a.css",
+    "main.js": "/static/js/main.8d586493.js",
+    "static/js/453.258b012d.chunk.js": "/static/js/453.258b012d.chunk.js",
+    "static/media/buspass.jpg": "/static/media/buspass.c5b1f924282e7e4283c8.jpg",
+    "static/media/home.jpg": "/static/media/home.c533df226a57264a78c9.jpg",
+    "static/media/bonofide.jpg": "/static/media/bonofide.e5424aae9bd0c97c1022.jpg",
+    "static/media/headerLogo.jpg": "/static/media/headerLogo.a64f10238d8739a1518d.jpg",
+    "static/media/certi.jpg": "/static/media/certi.d29510d20613040421fd.jpg",
+    "static/media/Feedue.jpg": "/static/media/Feedue.a4a7e7b97b649784d7a5.jpg",
+    "index.html": "/index.html",
+    "main.d7ce630a.css.map": "/static/css/main.d7ce630a.css.map",
+    "main.8d586493.js.map": "/static/js/main.8d586493.js.map",
+    "453.258b012d.chunk.js.map": "/static/js/453.258b012d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7ce630a.css",
+    "static/js/main.8d586493.js"
+  ]
+}
