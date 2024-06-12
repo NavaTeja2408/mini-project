@@ -6,7 +6,7 @@ const student = express.Router();
 
 corsOptions = {
   credentials: true,
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "https://mini-project-pi-neon.vercel.app"],
   optionStatus: 200,
 };
 

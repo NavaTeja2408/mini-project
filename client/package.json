@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "https://mini-project-pi-neon.vercel.app",
   "eslintConfig": {
     "extends": [
       "react-app",
