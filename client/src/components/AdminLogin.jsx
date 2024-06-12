@@ -120,7 +120,7 @@ const AdminLogin = () => {
               type="submit"
               fullWidth
             >
-              {loading ? <CircularProgress /> : "Loading"}
+              {loading ? <CircularProgress /> : "Login"}
             </Button>
           </form>
         </Paper>
