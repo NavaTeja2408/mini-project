@@ -25,7 +25,7 @@ const Bonfide = ({ apply, bus, disabled, setRequest }) => {
         );
       } else {
         const { res } = await axios.post(
-          "http://localhost:8000/api/student/apply",
+          `${window.location.origin}/api/student/apply`,
           { name, rollno, phoneno, applying, rmmno }
         );
       }
