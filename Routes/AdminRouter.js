@@ -21,8 +21,8 @@ admin.use(cors(corsOptions));
 
 admin.post("/signup", signup);
 admin.post("/login", login);
-admin.post("/getdata", verifyToken, getdata);
-admin.post("/update", verifyToken, statusUpdate);
-admin.get("/logout", verifyToken, logout);
+admin.post("/getdata", getdata);
+admin.post("/update", statusUpdate);
+admin.get("/logout", logout);
 
 module.exports = admin;
