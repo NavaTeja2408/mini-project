@@ -7,6 +7,7 @@ const {
   statusUpdate,
   logout,
 } = require("../Components/AdminComponents");
+const { verifyToken } = require("../utils/validate");
 
 const admin = express.Router();
 
@@ -20,8 +21,8 @@ admin.use(cors(corsOptions));
 
 admin.post("/signup", signup);
 admin.post("/login", login);
-admin.post("/getdata", getdata);
-admin.post("/update", statusUpdate);
-admin.get("/logout", logout);
+admin.post("/getdata", verifyToken, getdata);
+admin.post("/update", verifyToken, statusUpdate);
+admin.get("/logout", verifyToken, logout);
 
 module.exports = admin;

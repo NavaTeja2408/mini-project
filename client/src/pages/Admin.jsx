@@ -25,11 +25,15 @@ const Admin = () => {
   const { setAuthUser, authUser } = useContext(UserContext);
   const handleSearch = async () => {
     try {
+      const config = {
+        withCredentials: true,
+      };
       const res = await axios.post(
         `${window.location.origin}/api/student/search`,
         {
           searchInput,
-        }
+        },
+        config
       );
       console.log(res.data);
       setStudentData(res.data);
@@ -61,10 +65,14 @@ const Admin = () => {
 
   const handleComplete = async (id) => {
     try {
+      const config = {
+        withCredentials: true,
+      };
       const newStatus = "Completed";
       const { data } = await axios.post(
         `${window.location.origin}/api/admin/update`,
-        { id, newStatus }
+        { id, newStatus },
+        config
       );
     } catch (error) {
       console.log(error);
@@ -75,10 +83,14 @@ const Admin = () => {
   };
   const handleCancel = async (id) => {
     try {
+      const config = {
+        withCredentials: true,
+      };
       const newStatus = "Canceled";
       const { data } = await axios.post(
         `${window.location.origin}/api/admin/update`,
-        { id, newStatus }
+        { id, newStatus },
+        config
       );
     } catch (error) {
       console.log(error);
