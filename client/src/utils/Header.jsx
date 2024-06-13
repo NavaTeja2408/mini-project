@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 left-0 right-0 h-18 md:h-32 bg-grayTop flex items-center">
       <img
-        src={headerLogo}
+        src="https://res.cloudinary.com/dojwaepbj/image/upload/v1718256567/bgyf5eyjnpyzbwwio9la.jpg"
         className="h-16 md:h-28 m-3 pr-7 md:max-w-lg mix-blend-darken"
         alt="header"
       />

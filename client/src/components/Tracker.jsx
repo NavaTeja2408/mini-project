@@ -32,13 +32,6 @@ const Tracker = () => {
     }
   };
 
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    const year = date.getFullYear();
-    const month = (date.getMonth() + 1).toString().padStart(2, "0"); // Months are zero-based
-    const day = date.getDate().toString().padStart(2, "0");
-    return `${day}-${month}-${year}`;
-  };
   return (
     <div>
       <div className="flex space-x-2">
@@ -90,14 +83,6 @@ const Tracker = () => {
                     }}
                     align="right"
                   >
-                    Roll No.
-                  </TableCell>
-                  <TableCell
-                    sx={{
-                      color: "white",
-                    }}
-                    align="right"
-                  >
                     Applying
                   </TableCell>
                   <TableCell
@@ -106,23 +91,7 @@ const Tracker = () => {
                     }}
                     align="right"
                   >
-                    Payment
-                  </TableCell>
-                  <TableCell
-                    sx={{
-                      color: "white",
-                    }}
-                    align="right"
-                  >
                     Status
-                  </TableCell>
-                  <TableCell
-                    sx={{
-                      color: "white",
-                    }}
-                    align="right"
-                  >
-                    Date
                   </TableCell>
                 </TableRow>
               </TableHead>
@@ -142,17 +111,7 @@ const Tracker = () => {
                       {row.name}
                     </TableCell>
                     {/* <TableCell align="right">{row.name}</TableCell> */}
-                    <TableCell align="right">{row.rollno}</TableCell>
                     <TableCell align="right">{row.applying}</TableCell>
-                    <TableCell
-                      sx={{
-                        color: row.payment === "success" ? "green" : "red",
-                        fontWeight: "bold",
-                      }}
-                      align="right"
-                    >
-                      {row.payment}
-                    </TableCell>
                     <TableCell
                       align="right"
                       sx={{
@@ -166,9 +125,6 @@ const Tracker = () => {
                       }}
                     >
                       {row.status}
-                    </TableCell>
-                    <TableCell align="right">
-                      {row.Date ? formatDate(row.Date) : "-"}
                     </TableCell>
                   </TableRow>
                 ))}
