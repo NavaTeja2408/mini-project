@@ -160,6 +160,7 @@ const Admin = () => {
                 "&.Mui-focused fieldset": { borderColor: "white" },
               },
             }}
+            value={searchInput}
             fullWidth
             onChange={(e) => setSearchInput(e.target.value)}
           />
