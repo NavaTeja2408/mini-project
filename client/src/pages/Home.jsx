@@ -18,7 +18,7 @@ const Home = () => {
     setValue(newValue);
   };
   return (
-    <div>
+    <div className="h-screen w-full overflow-y-hidden">
       <Header />
       <div className="sm:pt-20 md:pt-32">
         <TabContext value={value}>

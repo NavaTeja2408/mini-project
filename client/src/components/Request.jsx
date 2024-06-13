@@ -6,11 +6,7 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
-import bonofide from "../assets/bonofide.jpg";
-import buspass from "../assets/buspass.jpg";
-import feedue from "../assets/Feedue.jpg";
 import Bonfide from "../forms/Bonfide";
-import certi from "../assets/certi.jpg";
 
 const Request = () => {
   const [request, setRequest] = useState("");
@@ -59,7 +55,7 @@ const Request = () => {
           <CardMedia
             component="img"
             height="140"
-            image={bonofide}
+            image="https://res.cloudinary.com/dojwaepbj/image/upload/v1718258221/Mini/vqid9tftaozb76vm85n2.jpg"
             alt="green iguana"
           />
           <CardContent>
@@ -77,7 +73,7 @@ const Request = () => {
           <CardMedia
             component="img"
             height="140"
-            image={buspass}
+            image="https://res.cloudinary.com/dojwaepbj/image/upload/v1718258294/Mini/onfbrgtleugneaiwnydh.jpg"
             alt="green iguana"
           />
           <CardContent>
@@ -95,7 +91,7 @@ const Request = () => {
           <CardMedia
             component="img"
             height="140"
-            image={certi}
+            image="https://res.cloudinary.com/dojwaepbj/image/upload/v1718258379/Mini/bcb6gfddjxrtz1uugt2t.jpg"
             alt="green iguana"
           />
           <CardContent>
@@ -113,7 +109,7 @@ const Request = () => {
           <CardMedia
             component="img"
             height="140"
-            image={feedue}
+            image="https://res.cloudinary.com/dojwaepbj/image/upload/v1718258447/Mini/s9ym7rywes07ie0yiwzd.jpg"
             alt="green iguana"
           />
           <CardContent>
